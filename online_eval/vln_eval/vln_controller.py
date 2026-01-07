@@ -9,7 +9,7 @@ from utils import get_glb_path, is_success, load_posture, normalize_angle
 # 配置参数
 MAX_INFERENCE_STEPS = 60
 SHARED_FOLDER = "shared_folder"
-TEST_VLN_FILE = "processed_vln_unseen.json"
+TEST_VLN_FILE = "test_vln_unseen.json"
 VLA_INS_BASE = "./vla_ins"
 POSTURE_BASE = "./without_screenshot"
 TRAJECTORY_OUTPUT = os.path.join(SHARED_FOLDER, "trajectories")
@@ -411,4 +411,5 @@ def main():
 
 
 if __name__ == "__main__":
+
     main()
