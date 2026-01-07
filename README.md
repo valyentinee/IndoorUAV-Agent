@@ -78,7 +78,7 @@ We provide our fine-tuning configuration files in the `config/` folder for refer
 
 ## Citation
 If you find this work useful, please cite:
-```bash
+```
 @article{liu2025indooruav,
 title={IndoorUAV: Benchmarking Vision-Language UAV Navigation in Continuous Indoor Environments},
 author={Liu, Xu and Liu, Yu and Qiu, Hanshuo and Qirong, Yang and Lian, Zhouhui},
