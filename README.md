@@ -51,7 +51,7 @@ Because the simulator environment and the inference model environment are not co
    ```bash
    ./online_eval/vla_eval.sh   # for VLA task
    ./online_eval/vln_eval.sh   # for VLN task
-
+   ```bash
       To save disk space, you can test on a subset of episodes by modifying:
    - `TEST_VLA_FILE` in `vla_controller.py`
    - `TEST_VLN_FILE` in `vln_controller.py`
