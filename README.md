@@ -7,7 +7,7 @@
 ## Release
 - [x] Pre-trained IndoorUAV-Agent model
 - [x] Online evaluation scripts for VLA and VLN tasks
-- [x] Offline metric evaluation scripts
+- [x] Metric evaluation scripts
 - [x] Fine-tuning configuration and guidelines
 
 ## Contents
@@ -27,7 +27,7 @@ Download the pre-trained IndoorUAV-Agent model from ModelScope:
 |-------|----------|
 | IndoorUAV-Agent | [checkpoint](https://modelscope.cn/models/valyentine/IndoorUAV-Agent) |
 
-This model is obtained by fine-tuning the pi0 model for 30k steps using the VLA portion (15k episodes) of the IndoorUAV dataset.
+This model is obtained by fine-tuning the pi0 model for 30k steps using the VLA part (15k episodes) of the IndoorUAV dataset.
 
 ## Online Evaluation
 Because the simulator environment and the inference model environment are not compatible, you need to set up two separate environments.
@@ -43,18 +43,18 @@ Because the simulator environment and the inference model environment are not co
 1. **Download the dataset** from [ModelScope](https://modelscope.cn/datasets/valyentine/Indoor_UAV).
 
 2. **Modify configuration files**:
-   - In `vla_controller.py` and `vln_controller.py`, set `INDOOR_UAV_BASE` to your dataset path.
-   - In `model_runner.py`, update `checkpoint_dir` to the path of the downloaded model.
-   - In `utils.py`, set the scene path to point to your `scene_datasets` folder.
+   - In [vla_controller.py](online_eval/vla_eval/vla_controller.py) and [vln_controller.py](online_eval/vla_eval/vln_controller.py), set `INDOOR_UAV_BASE` to your dataset path.
+   - In [model_runner.py]((online_eval/vla_eval/model_runner.py)), update `checkpoint_dir` to the path of the downloaded model.
+   - In [utils.py]((online_eval/vla_eval/utils.py)), set the scene path to point to your `scene_datasets` folder.
 
 3. **Run evaluation scripts**:
    ```bash
    ./online_eval/vla_eval.sh   # for VLA task
    ./online_eval/vln_eval.sh   # for VLN task
    ```
-      To save disk space, you can test on a subset of episodes by modifying:
-   - `TEST_VLA_FILE` in `vla_controller.py`
-   - `TEST_VLN_FILE` in `vln_controller.py`
+      To save disk space by downloading part of the dataset, you can test on a subset of episodes by modifying:
+   - `TEST_VLA_FILE` in [vla_controller.py](online_eval/vla_eval/vla_controller.py)
+   - `TEST_VLN_FILE` in [vln_controller.py](online_eval/vla_eval/vln_controller.py)
    
    and the corresponding JSON files.
 
@@ -62,8 +62,8 @@ Because the simulator environment and the inference model environment are not co
 After batch testing, you can compute quantitative metrics using:
 
 ```bash
-python vla_metric.py   # for VLA task
-python vln_metric.py   # for VLN task
+python eval_metric/vla_metric.py   # for VLA task
+python eval_metric/vln_metric.py   # for VLN task
 ```
 Before running, set the `trajectories_dir` parameter in each script to the actual path where trajectories are stored.
 
