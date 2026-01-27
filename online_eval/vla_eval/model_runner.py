@@ -10,8 +10,8 @@ def init_model():
     from openpi.training import config
     from openpi.policies import policy_config
 
-    config = config.get_config("pi0_fast_uav_low_mem_finetune")
-    checkpoint_dir = "/data1/liuy/pi0_fast_ck/pi0_fast_uav_low_mem_finetune/15k_2/29999"
+    config = config.get_config("pi0_uav_low_mem_finetune")
+    checkpoint_dir = "/data1/liuy/pi0_ck/pi0_uav_low_mem_finetune/15k_2/29999"
     return policy_config.create_trained_policy(config, checkpoint_dir)
 
 
@@ -162,4 +162,5 @@ def main():
 
 
 if __name__ == "__main__":
+
     main()
