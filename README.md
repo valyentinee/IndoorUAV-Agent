@@ -10,7 +10,8 @@
 - [x] Metric evaluation scripts
 - [x] Fine-tuning configuration and guidelines
 - [Jan 2026] Meta infomation (norm_stats.json) of the training data are uploaded
-- [Feb 2026] Depth images are uploaded to the datastet
+- [Feb 2026] Depth images are uploaded to the modelscope repo
+
 
 ## Contents
 - [Model Download](#model-download)
