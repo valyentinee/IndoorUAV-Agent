@@ -29,7 +29,7 @@ Download the pre-trained IndoorUAV-Agent model from ModelScope:
 |-------|----------|
 | IndoorUAV-Agent | [checkpoint](https://modelscope.cn/models/valyentine/IndoorUAV-Agent) |
 
-This model is obtained by fine-tuning the pi0 model for 30k steps using the VLA part (15k episodes, the full VLA training data is about 25k) of the IndoorUAV dataset. The meta information of the training data can be found in the ```training_data.zip```.
+This model is obtained by fine-tuning the pi0 model for 30k steps using the VLA part (15k episodes, the full VLA training data is about 25k) of the IndoorUAV dataset. The meta information of the training data can be found in the ```training_data.zip```, which contains the ```norm_stats.json```.
 
 ## Online Evaluation
 Because the simulator environment and the inference model environment are not compatible, you need to set up two separate environments.
