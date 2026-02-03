@@ -48,6 +48,7 @@ Because the simulator environment and the inference model environment are not co
    - In [vla_controller.py](online_eval/vla_eval/vla_controller.py) and [vln_controller.py](online_eval/vla_eval/vln_controller.py), set `INDOOR_UAV_BASE` to your dataset path.
    - In [model_runner.py]((online_eval/vla_eval/model_runner.py)), update `checkpoint_dir` to the path of the downloaded model.
    - In [utils.py]((online_eval/vla_eval/utils.py)), set the scene path to point to your `scene_datasets` folder.
+   - Unzip the ```training_data.zip``` and set the `repo_id` in [config.py](https://github.com/valyentinee/IndoorUAV-Agent/blob/main/config/pi0/config.py) (line 591) to the `training_data` folder.
 
 3. **Run evaluation scripts**:
    ```bash
