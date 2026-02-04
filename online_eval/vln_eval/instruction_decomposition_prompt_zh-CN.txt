@@ -1,0 +1,49 @@
+## 任务说明
+你是一个导航指令分析专家。你的任务是将完整的导航指令分割成多个子句，每个子句需要可以被视为一个小的指令。
+
+## 输出要求
+1. 将完整指令分割成多个子句，每个子句需要可以被视为一个小的指令
+2. 分割后的子句应该是可以拼接回原来完整的指令，不允许修改或重组子句的内容
+4. 输出格式为一个列表，列表里各个元素是按原指令顺序切分后的子句: {["子句1", "子句2","子句x"]}
+5. 你不需要输出额外的解释内容，只需要输出示例中的结果部分，即括号和里面的内容，不需要其他符号和标注
+
+## 规则
+1. 保持子句的原始文本不变，不要修改或重组
+2. 每个子句需要可以视为小的指令，即至少有包含需要执行的动作
+3. 分割后的子句需要按照原指令的顺序排列，不允许修改顺序
+
+## 示例
+示例输入指令1: 
+"Proceed forward from the middle of the hallway into the entrance of the living room, continue into the living room and pause to observe its table, rug, and fireplace, turn left toward the kitchen entrance, turn left again to the end of the hallway, then proceed forward back into the living room entrance and onward to its center."
+
+示例正确输出1:
+{[
+    "Proceed forward from the middle of the hallway into the entrance of the living room",
+    "continue into the living room and pause to observe its table, rug, and fireplace",
+    "turn left toward the kitchen entrance",
+    "turn left again to the end of the hallway",
+    "then proceed forward back into the living room entrance and onward to its center"
+]}
+
+示例输入指令2:
+"Starting at the hallway entrance beside a table on the left and a sofa on the right, fly forward into the corridor center approaching the doorway ahead with a mirror on the right, turn right into the living room entrance where a table stands to the left and a sofa sits beneath a chandelier and picture frames, fly forward toward the sofa under the chandelier, linger to note the sofa, adjacent picture frames, and a door to the right, turn left back into the hallway entrance flanked by a door on the left and a sofa on the right, fly forward into the hallway center toward a tripod between doorways, fly forward further toward a row of doorways with a panel to the right and a bed visible beyond, fly forward alongside the panel, turn left into the bathroom entrance marked by a doorframe to the left and a panel to the right facing a toilet, fly forward into the bathroom approaching the radiator, toilet, and a central panel, fly forward until the shower appears on the right, and finally descend in front of the curtain."
+
+示例正确输出2:
+{{[
+    "Starting at the hallway entrance beside a table on the left and a sofa on the right, fly forward into the corridor center approaching the doorway ahead with a mirror on the right",
+    "turn right into the living room entrance where a table stands to the left and a sofa sits beneath a chandelier and picture frames",
+    "fly forward toward the sofa under the chandelier",
+    "linger to note the sofa, adjacent picture frames, and a door to the right",
+    "turn left back into the hallway entrance flanked by a door on the left and a sofa on the right",
+    "fly forward into the hallway center toward a tripod between doorways",
+    "fly forward further toward a row of doorways with a panel to the right and a bed visible beyond",
+    "fly forward alongside the panel",
+    "turn left into the bathroom entrance marked by a doorframe to the left and a panel to the right facing a toilet",
+    "fly forward into the bathroom approaching the radiator, toilet, and a central panel",
+    "fly forward until the shower appears on the right",
+    "and finally descend in front of the curtain"   
+]}}
+## 当前任务
+请处理以下指令，并生成符合要求的JSON输出:
+完整导航指令:
+{instruction}
