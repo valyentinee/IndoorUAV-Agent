@@ -11,6 +11,7 @@
 - [x] Fine-tuning configuration and guidelines
 - [Jan 2026] Meta infomation (norm_stats.json) of the training data are uploaded
 - [Feb 2026] Depth images are uploaded to the modelscope repo
+- [Feb 2026] The instrucion decomposition prompt are uploaded
 
 
 ## Contents
