@@ -41,7 +41,9 @@ Because the simulator environment and the inference model environment are not co
    Follow the instructions in [habitat-sim](https://github.com/facebookresearch/habitat-sim/tree/main) to install the Habitat simulator.
 
 2. **Inference Model Environment**  
-   Set up the environment following [openpi repo](https://github.com/Physical-Intelligence/openpi/tree/05-31-implement_training_on_droid) (the 05-31-implement_training_on_droid branch) and replace the config files mentioned in this [part](https://github.com/Physical-Intelligence/openpi/tree/05-31-implement_training_on_droid?tab=readme-ov-file#fine-tuning-base-models-on-your-own-data) with corresponding files provided in [config/pi0](https://github.com/valyentinee/IndoorUAV-Agent/tree/main/config/pi0).
+   ~~Set up the environment following [openpi repo](https://github.com/Physical-Intelligence/openpi/tree/05-31-implement_training_on_droid) and replace the config files mentioned in this [part](https://github.com/Physical-Intelligence/openpi/tree/05-31-implement_training_on_droid?tab=readme-ov-file#fine-tuning-base-models-on-your-own-data) with corresponding files provided in [config/pi0](https://github.com/valyentinee/IndoorUAV-Agent/tree/main/config/pi0).~~
+
+   The openpi repository has been updated. Please use our uploaded openpi repo and configure the environment according to its [README.md](https://github.com/valyentinee/IndoorUAV-Agent/blob/main/openpi/README.md).
 
 ### Running Evaluation
 1. **Download the dataset** from [ModelScope](https://modelscope.cn/datasets/valyentine/Indoor_UAV).
