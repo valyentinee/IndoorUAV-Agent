@@ -86,11 +86,14 @@ We provide our fine-tuning configuration files in the `config/` folder for refer
 ## Citation
 If you find this work useful, please cite:
 ```
-@article{liu2025indooruav,
-title={IndoorUAV: Benchmarking Vision-Language UAV Navigation in Continuous Indoor Environments},
-author={Liu, Xu and Liu, Yu and Qiu, Hanshuo and Qirong, Yang and Lian, Zhouhui},
-journal={arXiv preprint arXiv:2512.19024},
-year={2025}
+@inproceedings{liu2026indooruav,
+  title={Indooruav: Benchmarking vision-language uav navigation in continuous indoor environments},
+  author={Liu, Xu and Liu, Yu and Qiu, Hanshuo and Qirong, Yang and Lian, Zhouhui},
+  booktitle={Proceedings of the AAAI Conference on Artificial Intelligence},
+  volume={40},
+  number={28},
+  pages={23864--23872},
+  year={2026}
 }
 ```
 
