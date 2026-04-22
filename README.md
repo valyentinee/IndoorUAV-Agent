@@ -79,7 +79,7 @@ Before running, set the `trajectories_dir` parameter in each script to the actua
 Convert your data to RLDS format using [rlds_dataset_builder](https://github.com/kpertsch/rlds_dataset_builder).
 
 ### Fine-Tuning Steps
-Refer to the section **"Fine-Tuning Base Models on Your Own Data"** in the [openpi](https://github.com/Physical-Intelligence/openpi/tree/05-31-implement_training_on_droid?tab=readme-ov-file#fine-tuning-base-models-on-your-own-dat) repository.
+Refer to the section **"Fine-Tuning Base Models on Your Own Data"** in the provided [openpi](https://github.com/valyentinee/IndoorUAV-Agent/tree/main/openpi#fine-tuning-base-models-on-your-own-data) repository.
 
 We provide our fine-tuning configuration files in the `config/` folder for reference.
 
