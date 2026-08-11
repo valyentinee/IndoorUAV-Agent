@@ -102,4 +102,4 @@ Our code is built upon:
 - [pi0 (openpi)](https://github.com/Physical-Intelligence/openpi)
 - [Habitat-Sim](https://github.com/facebookresearch/habitat-sim/tree/main)
 
-For any questions, please contact Yu Liu at [yuliu_@hust.edu.cn](mailto:yuliu_@hust.edu.cn).
+For any questions, please contact Yu Liu at [liuyu26@stu.pku.edu.cn](mailto:liuyu26@stu.pku.edu.cn).
