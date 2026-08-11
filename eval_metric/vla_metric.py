@@ -94,7 +94,7 @@ def process_episode(trajectory_file):
             gt_seq.append([x, y, z, yaw_rad])
 
         # 处理预测轨迹 (跳过第0个点)
-        pred_full_seq = trajectory[2:16]  # 取第1到15个点
+        pred_full_seq = trajectory[1:16]  # 取第1到15个点
 
         # 检查是否满足停止条件
         stop_index = None
